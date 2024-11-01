@@ -21,7 +21,9 @@ const Header = () => {
               Раджабов
             </h3>
           </a>
-          <button className="btn btn-sm">Работай со мной</button>
+          <button className="btn btn-sm">
+            <a href="#contact">Работай со мной</a>
+          </button>
         </div>
       </div>
     </header>

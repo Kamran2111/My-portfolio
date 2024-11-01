@@ -16,15 +16,24 @@ const Work = () => {
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
           >
             <div>
-              <h2 className="h2 leading-tight text-accent">
+              <h2 className="h2 leading-tight mb-2 text-accent">
                 Мои последние <br /> Работы
               </h2>
-              <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                voluptas provident libero, repellendus quis nisi corporis
-                doloremque quia saepe aspernatur!
+              <p className="max-w-sm mb-[16px]">
+                В этом разделе вы можете ознакомиться с моими недавними
+                проектами. Каждый из них был разработан с использованием
+                новейших технологий и решений для обеспечения высокого качества
+                и эффективности.
               </p>
-              <button className="btn btn-sm">Смотреть все проекты</button>
+              <button className="btn btn-sm">
+                <a
+                  href="https://github.com/Kamran2111?tab=repositories
+                  "
+                  target="blank"
+                >
+                  Смотреть все проекты
+                </a>
+              </button>
             </div>
             {/* img */}
             {/* Projec-1 */}

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/avatar.svg";
+import img from "../../assets/me.png";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -46,9 +46,12 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
-              odio voluptatem dolores aspernatur reiciendis obcaecati laudantium
-              assumenda, suscipit eveniet illum!
+              Я занимаюсь созданием интерактивных и современных веб-приложений,
+              сочетающих стильный дизайн и передовые технологии. Моя цель —
+              разрабатывать удобные и привлекательные интерфейсы, которые делают
+              использование сайта простым и приятным. Я постоянно совершенствую
+              свои навыки, чтобы предлагать свежие и инновационные решения в
+              каждой новой разработке.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 1.2)}
@@ -57,8 +60,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex items-center max-w-max gap-x-6 mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Свяжитесь со мной</button>
-              <a href="#" className="text-gradient btn-link">
+              <button className="btn btn-lg">
+                <a href="#contact">Свяжитесь со мной</a>
+              </button>
+              <a href="#work" className="text-gradient btn-link">
                 Мое портфолио
               </a>
             </motion.div>
@@ -87,10 +92,8 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            className="hidden lg:flex flex-1 max-w-[320px] max-w-[482px]"
-          >
-            <img src={img} alt="My Photo" />
-          </motion.div>
+            className="flex-1 bg-banner bg-contain bg-no-repeat h-[540px] mix-blend-lighten bg-top"
+          ></motion.div>
         </div>
       </div>
     </section>

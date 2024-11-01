@@ -11,13 +11,13 @@ const About = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* Image block */}
-          <motion.div
+          {/* <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 bg-about bg-contain bg-no-repeat h-[440px] mix-blend-lighten bg-top"
-          ></motion.div>
+          ></motion.div> */}
 
           {/* Content block */}
           <motion.div
@@ -59,7 +59,9 @@ const About = () => {
               <li>
                 Разработка веб-приложений с использованием React и TypeScript
               </li>
-              <li>Создание адаптивных интерфейсов с помощью Tailwind CSS</li>
+              <li>
+                Создание адаптивных интерфейсов с помощью Tailwind CSS/Bootstrap
+              </li>
               <li>Опыт работы с Redux для управления состоянием</li>
               <li>Командная работа в GitHub</li>
             </ul>
@@ -95,8 +97,10 @@ const About = () => {
             </div>
 
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Свяжитесь со мной</button>
-              <a href="#" className="text-gradient btn-link">
+              <button className="btn btn-lg">
+                <a href="#contact">Свяжитесь со мной</a>
+              </button>
+              <a href="#work" className="text-gradient btn-link">
                 Мое портфолио
               </a>
             </div>
