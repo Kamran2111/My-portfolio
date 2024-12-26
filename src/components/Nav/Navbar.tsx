@@ -1,10 +1,11 @@
 import { BiHomeAlt, BiUser } from "react-icons/bi";
-import { BsBriefcase, BsClipboardData, BsChatSquareText } from "react-icons/bs";
+import { BsBriefcase, BsChatSquareText } from "react-icons/bs";
+import { AiOutlineDownload } from "react-icons/ai";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
+    <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-[100]">
       <div className="mx-auto">
         <div className="w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50">
           <Link
@@ -34,6 +35,15 @@ const Navbar = () => {
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsBriefcase />
+          </Link>
+          <Link
+            to="download"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+          >
+            <AiOutlineDownload />
           </Link>
           <Link
             to="contact"

@@ -1,5 +1,3 @@
-import React from "react";
-import img from "../../assets/me.png";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -44,7 +42,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mb-3 max-w-lg mx-auto lg:mx-0"
             >
               Я занимаюсь созданием интерактивных и современных веб-приложений,
               сочетающих стильный дизайн и передовые технологии. Моя цель —
@@ -54,11 +52,11 @@ const Banner = () => {
               каждой новой разработке.
             </motion.p>
             <motion.div
-              variants={fadeIn("up", 1.2)}
+              variants={fadeIn("up", 0.9)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex items-center max-w-max gap-x-6 mb-12 mx-auto lg:mx-0"
+              viewport={{ once: false, amount: 0.5 }}
+              className="flex items-center max-w-max gap-x-6 mb-4 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">
                 <a href="#contact">Свяжитесь со мной</a>
@@ -68,11 +66,12 @@ const Banner = () => {
               </a>
             </motion.div>
             <motion.div
-              variants={fadeIn("up", 1.4)}
+              variants={fadeIn("up", 1)}
               initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              animate="show"
+              whileInView="show"
+              viewport={{ once: false }}
+              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 mt-0"
             >
               <a href="https://github.com/Kamran2111" target="blank">
                 <FaGithub />

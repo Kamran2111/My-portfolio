@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import gmailImg from "../../assets/gmail.png";
+import gmailImg from "../../assets/gmail-icon.svg";
 
 const Contact = () => {
   return (
@@ -40,7 +40,7 @@ const Contact = () => {
             <div className="flex items-center gap-x-4 mb-6">
               <img src={gmailImg} alt="Gmail" className="w-10 h-10" />
               <a
-                href="mailto:racabovkamran9@gmail.com?subject=Вопрос&body=Здравствуйте"
+                href="mailto:racabovkamran9@gmail.com"
                 className="text-lg lg:text-xl text-gradient font-semibold"
               >
                 Написать мне на Gmail
@@ -50,9 +50,12 @@ const Contact = () => {
               <h5 className="text-xl font-semibold text-gray-700 mb-2">
                 Мой номер
               </h5>
-              <span className="text-2xl font-bold text-gradient">
-                +994(51)-796-02-69
-              </span>
+              <a
+                className="text-2xl font-bold text-gradient"
+                href="tel:+994517960269"
+              >
+                +994 (51) 796-02-69
+              </a>
             </div>
           </motion.div>
         </div>
