@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import img1 from "../../assets/portfolio-img1.png";
 import img2 from "../../assets/portfolio-img2.png";
+import img3 from "../../assets/portfolio-img3.png";
 
 const Work = () => {
   return (
@@ -17,7 +18,7 @@ const Work = () => {
           >
             <div>
               <h2 className="h2 leading-tight mb-2 text-accent">
-                Мои последние <br /> Работы
+                Мои последние <br /> Проекты
               </h2>
               <p className="max-w-sm mb-[16px]">
                 В этом разделе вы можете ознакомиться с моими недавними
@@ -89,6 +90,30 @@ const Work = () => {
                   <span className="text-3xl text-white">
                     Гардероб Джентельмена
                   </span>
+                </div>
+              </a>
+            </div>
+            {/*  */}
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              <a
+                href="https://movie-hub-one-pi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative z-50 w-full h-full block"
+                role="link"
+              >
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500 w-full h-full object-cover p-[50px_50px_0_50px]"
+                  src={img3}
+                  alt="MovieHub — UI/UX Дизайн"
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Дизайн</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">MovieHub</span>
                 </div>
               </a>
             </div>

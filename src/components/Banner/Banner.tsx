@@ -42,7 +42,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-3 max-w-lg mx-auto lg:mx-0"
+              className="mb-2 max-w-lg mx-auto lg:mx-0"
             >
               Я занимаюсь созданием интерактивных и современных веб-приложений,
               сочетающих стильный дизайн и передовые технологии. Моя цель —
@@ -55,14 +55,14 @@ const Banner = () => {
               variants={fadeIn("up", 0.9)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: false }}
               className="flex items-center max-w-max gap-x-6 mb-4 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">
                 <a href="#contact">Свяжитесь со мной</a>
               </button>
               <a href="#work" className="text-gradient btn-link">
-                Мое портфолио
+                Мои проекты
               </a>
             </motion.div>
             <motion.div

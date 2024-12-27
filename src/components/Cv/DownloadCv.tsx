@@ -39,10 +39,10 @@ const DownloadCv = () => {
         className="container mx-auto text-center text-white"
       >
         <h2 className="text-3xl sm:text-4xl lg:text-5xl text-accent font-extrabold mb-6">
-          Скачать мое портфолио
+          Скачать мое Резюме
         </h2>
         <p className="mb-8 text-gray-200 text-base sm:text-lg lg:text-xl">
-          Хотите больше узнать обо мне? Выберите язык и скачайте мое портфолио!
+          Хотите больше узнать обо мне? Выберите язык и скачайте мое резюме!
         </p>
         <div className="flex flex-col items-center gap-4">
           <select
@@ -50,9 +50,9 @@ const DownloadCv = () => {
             onChange={(e) => setLanguage(e.target.value)}
             className="p-3 border-2 border-accent rounded-lg bg-white text-black text-sm sm:text-base lg:text-lg focus:outline-none focus:ring-2 focus:ring-accent transition-shadow duration-300"
           >
-            <option value="en">Анг</option>
+            <option value="en">ENG</option>
             <option value="ru">Рус</option>
-            <option value="az">Азе</option>
+            <option value="az">AZE</option>
           </select>
           <button
             onClick={handleDownload}
