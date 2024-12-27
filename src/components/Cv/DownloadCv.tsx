@@ -9,13 +9,13 @@ const DownloadCv = () => {
     let fileUrl = "";
     switch (language) {
       case "en":
-        fileUrl = "/src/assets/CV-Kamran(ENG).png";
+        fileUrl = "/CV-Kamran(ENG).png";
         break;
       case "ru":
-        fileUrl = "/src/assets/CV-Kamran(RUS).png";
+        fileUrl = "/CV-Kamran(RUS).png";
         break;
       case "az":
-        fileUrl = "/src/assets/CV-Kamran(AZE).png";
+        fileUrl = "/CV-Kamran(AZE).png";
         break;
       default:
         fileUrl = "/downloads/My_Portfolio_EN.pdf";
