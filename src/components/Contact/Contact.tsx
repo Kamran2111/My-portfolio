@@ -54,7 +54,7 @@ const Contact = () => {
                 className="text-2xl font-bold text-gradient"
                 href="tel:+994517960269"
               >
-                +994 (51) 796-02-69
+                +994 (50) 441-16-42
               </a>
             </div>
           </motion.div>
